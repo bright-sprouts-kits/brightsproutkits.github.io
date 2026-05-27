@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrightSprout Kits | Early Childhood Resources & Stories</title>
+    <style>
+        :root {
+            --primary: #2e7d32;
+            --secondary: #ff9100;
+            --text: #2c3e50;
+            --bg: #f4f7f4;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: var(--text); background-color: var(--bg); line-height: 1.6; }
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        header { text-align: center; margin-bottom: 40px; }
+        header h1 { font-size: 2.5rem; color: var(--primary); margin-bottom: 10px; font-weight: 800; }
+        header p { font-size: 1.1rem; color: #555; max-width: 650px; margin: 0 auto; }
+        
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 25px; margin-top: 30px; }
+        @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+        
+        .card { background: white; border-radius: 16px; padding: 25px; box-shadow: 0 6px 18px rgba(0,0,0,0.04); display: flex; flex-direction: column; justify-content: space-between; }
+        .bundle-tag { align-self: flex-start; background: #e8f5e9; color: var(--primary); padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; margin-bottom: 15px; }
+        .story-tag { align-self: flex-start; background: #fff3e0; color: #e65100; padding: 4px 12px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; margin-bottom: 15px; }
+        
+        h2 { font-size: 1.4rem; color: #111; margin-bottom: 10px; }
+        .card p { color: #666; font-size: 0.95rem; margin-bottom: 20px; }
+        
+        .features { text-align: left; margin-bottom: 25px; }
+        .features li { margin-bottom: 10px; list-style-type: none; display: flex; align-items: center; font-size: 0.95rem; }
+        .features li::before { content: "✓"; color: var(--primary); font-weight: bold; margin-right: 10px; }
+        
+        .cta-btn { display: block; text-align: center; background: var(--secondary); color: white; text-decoration: none; padding: 12px 25px; font-size: 1.1rem; font-weight: bold; border-radius: 25px; box-shadow: 0 4px 10px rgba(255,145,0,0.2); }
+        .cta-btn.story-btn { background: var(--primary); box-shadow: 0 4px 10px rgba(46,125,50,0.2); }
+        
+        footer { text-align: center; color: #888; font-size: 0.9rem; margin-top: 60px; border-top: 1px solid #e0e0e0; padding-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>BrightSprout Kits</h1>
+            <p>Interactive, high-quality learning packages and engaging stories designed to build essential foundational skills for young children (Ages 3–7).</p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <span class="bundle-tag">Printable Learning Kit</span>
+                    <h2>Kenyan Alphabet & Numbers Fun Bundle</h2>
+                    <p>A complete foundational tracing kit packed with active learning features.</p>
+                    <ul class="features">
+                        <li><strong>Tracing Pages:</strong> Uppercase & lowercase letters plus numbers 1–20.</li>
+                        <li><strong>Interactive Parent Guide:</strong> Actionable tips to turn tracing into creative play.</li>
+                        <li><strong>Bonus Discovery Hunt:</strong> An exploration checklist for around the house.</li>
+                        <li><strong>Certificate of Completion:</strong> A reward page to celebrate success.</li>
+                    </ul>
+                </div>
+                <a href="#" class="cta-btn" target="_blank">Download Learning Kit</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <span class="story-tag">Storytime Adventures</span>
+                    <h2>The Shoe that Said Quack</h2>
+                    <p>An original children's storybook designed to spark imagination and language development.</p>
+                    <ul class="features">
+                        <li><strong>Engaging Narrative:</strong> Captivating storytelling tailored for young listeners and early readers.</li>
+                        <li><strong>Cultural Resonance:</strong> Thoughtfully written to connect with early childhood growth.</li>
+                        <li><strong>Phonics Connection:</strong> The perfect companion to support alphabet recognition.</li>
+                    </ul>
+                </div>
+                <a href="#" class="cta-btn story-btn" target="_blank">Read the Storybook</a>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 BrightSprout Kits. Dedicated to early childhood growth.</p>
+        </footer>
+    </div>
+
+</body>
+  </html>
